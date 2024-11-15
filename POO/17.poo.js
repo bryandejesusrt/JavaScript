@@ -27,7 +27,7 @@
   
   
       //Función constructora
-      /*     function Animal(nombre, genero) {
+           function Animal(nombre, genero) {
             //Atributos
             this.nombre = nombre;
             this.genero = genero;
@@ -40,45 +40,45 @@
             this.saludar = function () {
               console.log(`Hola me llamo ${this.nombre}`);
             }
-          } */
+          } 
   
       //Función constructora donde asignamos los métodos al Prototipo, no a la función como tal
-      /*  function Animal(nombre, genero) {
+      function Animal(nombre, genero) {
          //Atributos
          this.nombre = nombre;
          this.genero = genero;
-       } */
+       } 
   
       //Métodos agregados al prototipo de la función constructora
-      /* Animal.prototype.sonar = function () {
+       Animal.prototype.sonar = function () {
         console.log("Hago sonidos por que estoy vivo");
       }
   
       Animal.prototype.saludar = function () {
         console.log(`Hola me llamo ${this.nombre}`);
-      } */
+      } 
   
       //Herencia Prototípica
-      /* function Perro(nombre, genero, tamanio) {
+       function Perro(nombre, genero, tamanio) {
         this.super = Animal;
         this.super(nombre, genero);
         this.tamanio = tamanio;
-      } */
+      } 
   
       //Perro está heredando de Animal
-      /*  Perro.prototype = new Animal();
+        Perro.prototype = new Animal();
        Perro.prototype.constructor = Perro; */
   
       //Sobreescritura de métodos del Prototipo padre en el hijo
-      /* Perro.prototype.sonar = function () {
+       Perro.prototype.sonar = function () {
         console.log("Soy un perro y mi sonido es un ladrido");
       }
   
       Perro.prototype.ladrar = function () {
         console.log("Guauuu Guauuu !!!!");
-      } */
+      } 
   
-      /* const snoopy = new Perro("Snoopy", "Macho", "Mediano"),
+      const snoopy = new Perro("Snoopy", "Macho", "Mediano"),
         lolaBunny = new Animal("Lola Bunny", "Hembra");
   
       console.log(snoopy);
@@ -89,14 +89,14 @@
       snoopy.ladrar();
   
       lolaBunny.sonar();
-      lolaBunny.saludar(); */
+      lolaBunny.saludar(); 
   
   
-  
-  
-  
-      /* **********     Curso JavaScript: 24. Clases - #jonmircha y Curso JavaScript: 25. Métodos estáticos, getters y setters - #jonmircha     ********** */
-      /* class Animal {
+    
+    
+    
+      /* **********     Curso JavaScript: 24. Clases - #bryandejesusrt y Curso JavaScript: 25. Métodos estáticos, getters y setters - #bryandejesusrt     ********** */
+       class Animal {
         //el constructor es un método especial que se ejecuta en el momento de instanciar la clase
         constructor(nombre, genero) {
           this.nombre = nombre;
@@ -105,7 +105,7 @@
   
         //Métodos
         sonar() {
-          console.log("Hago sonidos por que estoy vivo");
+          console.log("Hago sonidos por que estoy vivo hola como estan");
         }
   
         saludar() {
@@ -130,7 +130,7 @@
         }
   
         //un método estático se pueden ejecutar sin necesidad de instanciar la clase
-        static queEres() {
+          queEres() {
           console.log("Los perros somos animales mamíferos que pertenecemos a la familia de los caninos. Somos considerados los mejores amigos del hombre.");
         }
   
@@ -158,5 +158,5 @@
       scooby.ladrar();
       console.log(scooby.getRaza);
       scooby.setRaza = "Grán Danés";
-      console.log(scooby.getRaza); */
+      console.log(scooby.getRaza); 
   
