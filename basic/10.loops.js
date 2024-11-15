@@ -34,6 +34,7 @@ const jon = {
   edad: 35,
 };
 
+// estos son los foreach en js agregados asi al lenjuage luego de EMMAScript 2015
 for (const propiedad in jon) {
   console.log(`Key: ${propiedad}, Value: ${jon[propiedad]}`);
 }

@@ -41,6 +41,8 @@ saludar();
 
 //Funciones declaradas VS funciones expresadas
 
+
+//funcionDeclarada();
 funcionDeclarada();
 
 function funcionDeclarada() {
@@ -49,11 +51,10 @@ function funcionDeclarada() {
   );
 }
 
-//funcionDeclarada();
 
+//función Expresada/anonima
 funcionExpresada();
 
-//función anónima
 const funcionExpresada = function () {
   console.log(
     "Esto es una función expresada, es decir, una función que se le ha asignado como valor a una variable, si invocamos esta función antes de su definición JS nos dirá 'Cannot access 'funcionExpresada' before initialization'"
